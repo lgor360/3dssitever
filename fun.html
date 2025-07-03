@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>igor360 website 3ds edition</title>
+    <script>
+      if (navigator.platform != "New Nintendo 3DS" && navigator.platform != "Nintendo 3DS" && !tdser) {
+        window.location.href = "https://igor360.neocities.org/index.html?aa&tdserror=ee";
+      }
+    </script>
+    <style>
+      .buttonIMG {
+        width: 100px;
+      }
+      
+      body {
+        font-size: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        background: #4F4F4F;
+        color: #ffffff;
+      }
+
+      a {
+        text-decoration: none;
+        color: #ffffff;
+      }
+      
+      .nav a {
+        border-right: 1px #e2e2e2 solid; background: #2e2e2e;
+        padding: 0 6px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="nav" style="width: 100%; text-align: left; border: 1px #e2e2e2 solid; background: #2e2e2e;">
+      <a href="https://lgor360.github.io/3dssitever/">homepage</a>
+      <a style="font-weight: bold;" href="https://lgor360.github.io/3dssitever/fun.html">fun</a>
+    </div>
+    some web games
+    <div style="margin-top: 4px; border: 3px solid #DFDFDF; background-color: #363636; padding: 9px 9px;">
+      seal question<br>
+      <button onclick="confo()">start</button>
+    </div>
+    <script>
+      let min = 1;
+      let max = 4;
+
+      function rBred() {
+        let random = Math.floor(Math.random() * (max - min + 1)) + min;
+        document.querySelector('.some-cool-div .bredF .bred').src = `/res/images/bread/bread${random}.png`;
+      }
+      
+      function confo() {
+        const confor = confirm("u like seals?");
+        if (confor) {
+          alert("u like!!!");
+        } else {
+          alert("u dont like.");
+        }
+      }
+    </script>
+  </body>
+</html>
