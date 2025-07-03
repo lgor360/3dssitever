@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>igor360 website 3ds edition</title>
+    <script>
+      var urlp = new URLSearchParams(window.location.href);
+      var tdser = urlp.get('tdstest');
+      if (navigator.platform != "New Nintendo 3DS" && navigator.platform != "Nintendo 3DS" && !tdser) {
+        window.location.href = "https://igor360.neocities.org/index.html?aa&tdserror=ee";
+      }
+    </script>
+    <style>
+      body {
+        font-size: 10px;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        background: #4F4F4F;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="width: 100%; text-align: left; border: 1px #e2e2e2 solid; background: #2e2e2e;">navhhbar</div>
+    <span style="font-weight: bold; font-size: 20px;">welcome to my website :P</span><br>
+    my name is igor and my birthday is november 1!<br><br>
+
+    i like cats :3<br>
+    i also like programming games on python and do websites with html5<br><br>
+
+    i play roblox and its soooooo cool! my favorite place in roblox is elevator of chaos and natural disaster survival!<br>
+    by the way, i have a youtube channel with ~1K of subscribers!
+    <script>
+      var alertni = localStorage.getItem("visited") || "can";
+      if (alertni == "can") {
+        alert("hai! welcome to my website! it seems like u are using a console of nintendo 3ds family!");
+        alert("oh! also...");
+        alert("this is not full version of website! so pls if u want a full version - open this on ur pc: https://igor360.neocities.org/");
+        localStorage.setItem("visited", "true");
+      }
+    </script>
+  </body>
+</html>
